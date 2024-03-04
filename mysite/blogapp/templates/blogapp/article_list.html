@@ -1,0 +1,28 @@
+{% extends 'blogapp/base.html' %}
+
+
+{% block title %}
+    Article
+{% endblock %}
+
+{% block body %}
+    <h1>Article</h1>
+    <div>
+        {% if article_list %}
+       <div>
+            {% for article in article_list %}
+               <div>
+                   <p>
+                       <a href="{% url 'blogapp:article-details' pk=article.pk %}">{{ article.title }}</a>
+                   </p>
+                   <p>Pub_date: {{ article.pub_date }}</p>
+               </div>
+            {% endfor %}
+       </div>
+        {% endif %}
+     <div>
+        <a href="{% url 'blogapp:create_art' %}"
+        >Create a new article</a>
+     </div>
+    </div>
+{% endblock %}

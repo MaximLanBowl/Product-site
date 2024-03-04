@@ -1,0 +1,11 @@
+[
+  {
+    "model": "myauth.profile",
+    "pk": 1,
+    "fields": {
+      "user": 4,
+      "bio": "hello there!",
+      "agreement_accepted": false
+    }
+  }
+]

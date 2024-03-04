@@ -1,0 +1,30 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+    About me
+{% endblock %}
+
+
+{% block body %}
+    <h1>User info</h1>
+    <form method="post" ENCTYPE="multipart/form-data">
+        {% if user.is_authenticated %}
+        <h2>Details</h2>
+        <p>Username: {{ user.username }}</p>
+        <p>Email: {{ user.email }}</p>
+        <p>Bio: {{ user.profile.bio }}</p>
+        <p>Avatar: {{ user.avatar }}</p>
+        {% if user.profile.avatar %}
+        <img src="{{ user.profile.avatar.url }}" alt="{{ user.profile.avatar.username }}">
+        {% else %}
+        <h5>No avatar uploaded yet</h5>
+        {% endif %}
+        {% else %}
+        <h2>User is anonymous</h2>
+        {% endif %}
+        <div>
+        <a href="{% url 'myauth:users' %}">Back to users</a>
+        <a href="{% url 'myauth:user_update' pk=user.pk %}">Update user</a>
+        </div>
+    </form>
+{% endblock %}

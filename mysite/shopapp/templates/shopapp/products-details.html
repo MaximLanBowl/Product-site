@@ -1,0 +1,46 @@
+{% extends "shopapp/base.html" %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate 'Product' %}: #{{ product.pk }}
+{% endblock %}
+
+{% block body %}
+    <h1>{% translate 'Product' %}: {{ product.name }}</h1>
+    <h2>{% translate 'Permission' %}:</h2>
+    <div>
+        {% if perms.foo %}
+        <div>
+            <p>{% translate 'You have permission to do something in the foo app.' %}</p>
+            {% if perms.foo.add_vote %}
+                <p>{% translate 'You can vote!' %}</p>
+            {% endif %}
+            {% else %}
+                <p>{% translate "You don't have permission to do anything in the foo app." %}</p>
+            {% endif %}
+        </div>
+        <div>{% translate 'Description' %}: <em>{{ product.description }}</em></div>
+        <div>{% translate 'Price' %}: {{ product.price }}</div>
+        <div>{% translate 'Discount' %}: {{ product.discount }}</div>
+        <div>{% translate 'Archive' %}: {{ product.archive }}</div>
+        {% if product.preview %}
+            <img src="{{ product.preview.url }}" alt="{{ product.preview.name }}">
+        {% endif %}
+    </div>
+    <div>
+        <a href="{% url 'shopapp:product_update' pk=object.pk as product_update %}"></a>
+        <a href="{% url 'shopapp:product_delete' pk=object.pk as product_delete %}"></a>
+        <a href= "{% url 'shopapp:products_list' as products_list %}"></a>
+    </div>
+    {% blocktranslate %}
+        <a href="{{ product_update }}"
+        >Update product</a>
+
+        <a href="{{ product_delete }}"
+        >Archive product</a>
+
+        <a href= "{{ products_list }}"
+        >Back to products list</a>
+    {% endblocktranslate %}
+{% endblock %}

@@ -1,0 +1,538 @@
+[
+  {
+    "fields": {
+      "name": "Laptop",
+      "description": "",
+      "price": "1999.00",
+      "created_by": null,
+      "discount": 0,
+      "create_at": "2024-01-18T09:28:57.023Z",
+      "archive": false
+    },
+    "model": "shopapp.product",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "name": "Desktop",
+      "description": "",
+      "price": "2528.00",
+      "created_by": null,
+      "discount": 8,
+      "create_at": "2024-01-18T09:28:57.023Z",
+      "archive": true
+    },
+    "model": "shopapp.product",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "name": "Smartphone",
+      "description": "The best smartphone in the World",
+      "price": "980.00",
+      "created_by": null,
+      "discount": 25,
+      "create_at": "2024-01-18T09:28:57.023Z",
+      "archive": false
+    },
+    "model": "shopapp.product",
+    "pk": 3
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 5,
+    "fields": {
+      "name": "Phone 2",
+      "description": "Phone two is better than phone first\r\ngreat choice!",
+      "price": "970.02",
+      "created_by": null,
+      "discount": 2,
+      "create_at": "2024-01-23T14:18:23.497Z",
+      "archive": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 6,
+    "fields": {
+      "name": "Phone",
+      "description": "phone 3",
+      "price": "999.00",
+      "created_by": null,
+      "discount": 12,
+      "create_at": "2024-01-24T14:35:51.041Z",
+      "archive": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 7,
+    "fields": {
+      "name": "test",
+      "description": "rear",
+      "price": "234.34",
+      "created_by": null,
+      "discount": 43,
+      "create_at": "2024-01-24T14:39:00.154Z",
+      "archive": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 8,
+    "fields": {
+      "name": "Iphone",
+      "description": "iphone 15",
+      "price": "2010.00",
+      "created_by": null,
+      "discount": 5,
+      "create_at": "2024-01-30T15:59:59.982Z",
+      "archive": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 9,
+    "fields": {
+      "name": "tool",
+      "description": "qwerty",
+      "price": "100.00",
+      "created_by": null,
+      "discount": 0,
+      "create_at": "2024-02-01T14:17:21.045Z",
+      "archive": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 10,
+    "fields": {
+      "name": "AirPods",
+      "description": "Open",
+      "price": "300.00",
+      "created_by": null,
+      "discount": 10,
+      "create_at": "2024-02-02T13:32:32.813Z",
+      "archive": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 11,
+    "fields": {
+      "name": "Test",
+      "description": "qweqwr",
+      "price": "1000.00",
+      "created_by": null,
+      "discount": 10,
+      "create_at": "2024-02-10T10:39:53.755Z",
+      "archive": false
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 2,
+    "fields": {
+      "delivery_adress": "Гатчина, улица Крупская",
+      "promocode": "EASY",
+      "created_at": "2024-01-24T15:50:02.707Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 3,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:12:46.296Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 4,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:14:19.636Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 5,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:15:31.203Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 6,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:15:40.454Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 7,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:15:52.163Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 8,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:15:58.405Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 9,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:21:58.794Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 10,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:22:55.623Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 11,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:23:39.636Z",
+      "user": 1,
+      "archive": true,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 12,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:24:15.708Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 13,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:27:51.977Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 14,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:30:52.499Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 15,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:34:10.303Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 16,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:37:44.363Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 17,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:38:19.563Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 18,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:43:45.018Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 19,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:45:18.781Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 20,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:47:19.354Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 21,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:53:23.707Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 22,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:56:23.666Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 23,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:58:06.449Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 24,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T14:59:37.630Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 25,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T15:03:36.640Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 26,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-01T15:08:02.455Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 27,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-02T10:03:59.824Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 28,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-02T11:03:11.451Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 29,
+    "fields": {
+      "delivery_adress": null,
+      "promocode": "",
+      "created_at": "2024-02-02T12:54:07.316Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "shopapp.order",
+    "pk": 30,
+    "fields": {
+      "delivery_adress": "De",
+      "promocode": "wert",
+      "created_at": "2024-02-02T13:01:28.017Z",
+      "user": 1,
+      "archive": false,
+      "products": [
+        6
+      ]
+    }
+  }
+]

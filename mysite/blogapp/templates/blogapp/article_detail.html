@@ -1,0 +1,28 @@
+{% extends "blogapp/base.html" %}
+
+{% block title %}
+Article #{{ object.pk }}
+{% endblock %}
+
+
+{% block body %}
+<h1>Article</h1>
+<div>
+    <p>Title: {{ article.title }}</p>
+    <p>Pub_date: {{ article.pub_date }}</p>
+    <ul>
+        {% for author in article.author.all %}
+        <li>{{ author.name }}</li>
+        {% endfor %}
+    </ul>
+    <p>Category: {{ article.category }}</p>
+    <ul>
+        {% for tag in article.tags.all %}
+        <li>{{ tag.name }}</li>
+        {% endfor %}
+    </ul>
+</div>
+<div>
+    <a href="{% url 'blogapp:article' %}">Back to articles list</a>
+</div>
+{% endblock %}
