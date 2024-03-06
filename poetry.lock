@@ -45,6 +45,19 @@ files = [
 ]
 
 [[package]]
+name = "compose"
+version = "1.5.0"
+description = "The classic ``compose``, with all the Pythonic features."
+optional = false
+python-versions = "*"
+files = [
+    {file = "compose-1.5.0-py2.py30-none-any.whl", hash = "sha256:978597e74828db6fe62aca0aea2af7943834a5088ddd117f90a9732205e4df29"},
+    {file = "compose-1.5.0-py35-none-any.whl", hash = "sha256:a7da30cf5fde6031779af2264637a354bdb1a7b8c4522b0b23ddd36fde80a325"},
+    {file = "compose-1.5.0-py38-none-any.whl", hash = "sha256:b8a0bdf74f348fc0214ff2cf53d612242b562e90c525cf9802b6da054b6233f0"},
+    {file = "compose-1.5.0.tar.gz", hash = "sha256:1b26cb59c7ab007306097dfa34f2f14cae840ed56469ff4923ba5959e2af997f"},
+]
+
+[[package]]
 name = "django"
 version = "5.0.3"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -603,4 +616,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "44e1088657ff412a303b44f18d970e9e5e258a489db1169681d3e211cc12167b"
+content-hash = "fc96010e1fb387cefa626dba00bb108c199b61211bce116dc03f4556511f106a"
