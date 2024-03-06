@@ -22,7 +22,8 @@ sentry_sdk.init(
     profiles_sample_rate=1.0,
 )
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+DATABASE_DIR = BASE_DIR / "database"
+DATABASE_DIR.mkdir(exist_ok=True)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -35,7 +36,7 @@ SECRET_KEY = os.environ.get(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = getenv('DJANGO_DEBUG', '0') == '1'
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
@@ -133,7 +134,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': DATABASE_DIR / 'db.sqlite3',
     },
 }
 
