@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
+import os
 from os import getenv
 from pathlib import Path
 from django.urls import reverse_lazy
@@ -27,13 +28,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = getenv(
+SECRET_KEY = os.environ.get(
     'DJANGO_SECRET_KEY',
     'django-insecure-bf(3c3*yqfpo73hpoxm5xx&0#ydtxg(r1=7x-)h5m-5+m%*prr',
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = getenv('DJANGO_DEBUG', '0') == '1'
+# DEBUG = getenv('DJANGO_DEBUG', '0') == '1'
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
